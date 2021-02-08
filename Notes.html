@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Structre</title><!-- title -->
+    </head>
+    <body>
+        <!--
+        -----------------------------
+        header
+        this are different type of headers we use which are from 1 to 6 as the number increase their size decreases
+        -----------------------------
+        -->
+        <h1 id="first">header 1</h1> <!-- we use the id keyword to make a sort of identification so that later on we could use it when we make the goto page-->
+        <h2>header 2</h2>
+        <h3>header 3</h3>
+        <h4>header 4</h4>
+        <h5>header 5</h5>
+        <h6>header 6</h6>
+        <p> <!-- we use <p> command to write a paragraph note: we still have to use the keyword <br> to make new lines-->
+          this is <b>the</b> index zero line <br>
+          this is the first line <br>
+          this is the second line <br>
+          this is the third line <br>
+          this is the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fourth line that has a huge sapce in it <br> <!-- we use "&nbsp" keyword to make extra spacing between our words-->
+        </p>
+        <hr>
+        <!--
+        -----------------------------
+        Ordered lists
+        it is a list with ascending numbers staring from 1
+        -----------------------------
+        -->
+        <ol> 
+            <li>list one</li>
+            <li>list two</li>
+            <li>list three</li>
+        </ol>
+        <!--------------------------------------------------------------------------
+        NOTE!!!!!!!!!
+        It is recommended to use the keywords strong and em instead of b and i keyword when modifiying texts becuase we can easily change the meaning and the apperance of the
+        texts by using CSS if we use the strong and em keyword     
+        
+        -->
+        
+        
+        
+        
+        
+        <p>
+          this is the index zero line <br>
+          this is the first line <br>
+          <u>this is the second line </u><br>
+          <em>this is the third line </em><br> <!-- <em></em> has the same meaning as <i></i> which is to indent a ceratain text-->
+          <strong>this is the fourth line</strong> <br> <!-- <strong> </strong> as the same meaning as <b></b> which is to make the given text bold-->
+        </p>
+        <b><hr></b>
+        <!--
+        -----------------------------
+        unordered list
+        it is the list that is listed with symbols 
+        -----------------------------
+        -->
+        <ul>
+            <li>list one</li>
+            <li>list two</li>
+            <li>list three</li>
+        </ul>
+        <!--
+        --------------------------------------------------------------------
+        Description list
+        
+        --------------------------------------------------------------------        
+        -->
+        <dl>
+            <dt>Tile:</dt><!-- we use the dt key word to show what to describe -->
+            <dd>Some book title</dd><!-- we use the dd key word to decribe the above entity -->
+            <dt>Author:</dt>
+            <dd>Some author</dd>
+            <dd>Some other Author</dd>
+            <dt>Number of pages:</dt>
+            <dd>500</dd>         
+            
+        </dl>
+        
+        
+        <p>
+        this is the index zero line <br>  <!-- we use <br> for a new line-->
+          this is the first line <br>
+          <u>this is the second line </u><br> <!-- we use <u> </u> to underline the text-->
+          <i>this is the third line </i><br> <!-- we use <i> </i> to make the text italic-->
+          <b>this is the fourth line</b> <br> <!-- we use <b> </b> to make the text bold-->
+        </p>
+        <!--
+        -----------------------------
+        image displaying
+        * To adjust the width and height of the image we use width="" and height ="" respectively
+        * to get the image we want to dispaly we use the keyword src"filedestination"
+        * we use alt incase if the image doesnt load to give as a sense of understanding of the image
+        -----------------------------
+        -->
+        <img src="2014-mclaren-p1-test-review-car-and-driver-photo-580034-s-original.jpg" width="100" height="100" alt="Incase you didnt see this is a mclaren p1"><br>
+        <!--
+        -----------------------------
+        LINK
+        link the deafult will take us to that page but if we want to take is into a new tab we use the keyword target="_blank"
+        -----------------------------
+        -->
+        <a href="link.html" target="_blank">Click here to go to the second page</a><br>
+        <!--
+        -----------------------------
+        go to links
+        *when we want to make a goto link unlike a regular link we use the symbol "#" and the id that we use on the place we want to goto
+        *other than the above diffrence it works the same way as a link does
+        -----------------------------
+        -->
+        <a href="#first">Go to header 1</a>
+        <!--
+        ------------------------------------------------------
+        Table Creation
+        *Border is when we want to set the spacing between the datas
+        *<caption></caption> we use it to caption our table
+        *<tr></tr> stands for table row
+        *<th></th> stands for tableheader and we use it to make headers
+        *<td></td> we use it to insert a table data
+        *tfoot can be used anywere and it will still be displayed at the bottom
+        ------------------------------------------------------
+        -->
+        <table border="5">
+            <caption>Sample table</caption>
+            <thead>
+                 <tr>
+                <th>header1</th>
+                <th>header2</th>
+                <th>header3</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+                
+            </tr>
+            <tr>
+                <td>data4</td>
+                <td>data5</td>
+                <td>data5</td>
+                
+            </tr>
+            </tbody>
+            <tfoot>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tfoot>
+            
+        </table>
+        <!--
+        -----------------------------
+        FORM
+        * It's keyword is <form></form>
+        * their are several attributes to form one of which is action.
+        * the value of the action attribute is where the form will be sent to
+        * the action attribute is used in server side projects for just PC practice we can leave the value blank but we must know that in the server side implementation it can never be put blank becasuse it will cause an error
+        * we use the <input> keyword to prompt the user to enter something. we use it along the keyword 'type=""' for different data entry types.
+        * and we use the keyword 'name=""' to name those data entry points so that we can use the name to manipulate the types in the backend
+          however for submit entry type it is different 
+        * The data entry types are
+        1 "text" to enter a text
+        2 "password" to enter a password
+        3 "submit" used to submit a form
+        4 "button" to click a button and get ceratain action done
+        5 "Color" to choose a color
+        6 "date" to enter a date
+        7 "Checkbox" self expalantory
+        8 "datetime"
+        9 "datetime-local"
+        10 "email" to enter email
+        11 "file" to attach a ceratin file
+        12 "hidden"
+        13 "Image" to enter a image
+        14 "month"
+        15 "number"
+        16 "tel"
+        17 "radio"
+        18 "range"
+        19 "reset"
+        20 "time"
+        21 "url"
+        22 "weak"
+        -----------------------------
+        -->
+        <form action="" method="get">
+            <fieldset> <!-- it is kind of like a border to group our entry sets -->
+                <legend>User name and password</legend> <!-- Is used as a sort of caption -->
+                <label for="username">Username: </label><input id="username" type="text" name="username" placeholder="username" autofocus required><br>
+                <label for="password">Password: &nbsp</label><input id="password" type="password" name="password" placeholder="password" ><br>
+                <input type="reset" value="Try again">
+                <input type="submit" value="ok"><br>
+            </fieldset>
+            <fieldset>
+                <legend>radio button</legend>
+                <label for="on">ON: </label><input id="on" type="radio" name="ON/OFF" value="ON"><br>
+                <label for="off">OFF: </label><input id="off" type="radio" name="ON/OFF" value="OFF" checked>
+                <input type="submit">
+            </fieldset>
+            <fieldset>
+                <legend>Check box</legend>
+                <label for="twitter">Twitter: </label><input id="twitter" type="checkbox" name="twitter" value="yes" checked><br>
+                <label for="facebook">Facebook: </label><input id="facebook" type="checkbox" name="facebook" value="yes" checked>
+                <input type="submit">            
+                
+            </fieldset>
+            <fieldset>
+                <legend>Lists</legend>
+                <label for="country">Country: </label><select id="country"  name="Country">
+                <option value="United States">US</option>
+                <option value="United Kingdom">UK</option>
+                <option value="United Arab Emirates">UAE</option>
+                </select>
+                <input type="submit">
+            </fieldset>
+            <fieldset>
+                <legend>TextArea</legend>
+                <label for="comment">Comment: </label><textarea id="comment" name="comment">                    
+                </textarea>
+                <input type="submit">               
+            </fieldset>
+            <fieldset>
+                <legend>New Html5 formats</legend>
+                <label for="email">E-mail: </label><input id="email" type="text" name="E-mail" placeholder="someone@example.com" pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}" title="please enter a valid Email address: someone@example.com"><br>
+                <label for="password">Password: </label><input id="password" type="password" name="password" placeholder="password"><br>
+                <label for="number">Tel Number: </label><input id="number" type="tel" name="Phone number" placeholder="phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="please Enter you phone number using the following fromat: #### ### ###"><br>
+                <label for="date">Date: </label><input id="date" type="date" name="date" min="2018-08-30"><br>
+                <label for="textsize">Text Size: </label><input id="textsize" type="range" name="textsize" min="10" max="100"><br>
+                <label for="num">Number: </label><input id="num" type="number" name="number" value="0" min="0" max="10"><br>
+                <input type="submit" value="Submit">  
+            </fieldset>           
+            
+        </form>
+            <!-- to upload an audio file in html we use the syntax below-->
+            <form action="" method="get">
+            <fieldset>
+            <legend>Audio file</legend>
+             <label>An mp3 file</label><audio controls>
+                <source src="01 What's Up Danger.mp3" type="audio/mpeg"><!-- we use this for browsers that support mp3 format-->
+                <source src="01 What's Up Danger.ogg" type="audio/ogg"><!-- we use this for browsers that  do not support mp3 format-->
+                <a href="01 What's Up Danger.mp3">To play the mp3 audio</a<!-- we use this for browsers that dont  support audio files-->
+            </audio>
+            </fieldset>
+            </form>
+            <!-- to upload a video file in html we use the syntax below-->
+            <form action="" method="get">
+            <fieldset>
+            <legend>video file</legend>
+            <label>An mp4 file</label>
+            <video controls>
+                <source src="Tesla Semi & Roadster Unveil - YouTube.MP4" type="video/mp4"><!-- we use this for browsers that support mp4 files-->
+                <source src="Tesla Semi & Roadster Unveil - YouTube.webm" type="video/webm"><!-- we use this for browsers that  dont support mp4 files-->
+                <source src="Tesla Semi & Roadster Unveil - YouTube.ogv" type="video/ogg"><!-- we use this for browsers that  dont support video files-->
+            </video>
+            </fieldset>
+            </form>
+            
+            <form action="" method="get">
+            <fieldset>
+            <legend>video file</legend>
+            <label>An mkv file</label>
+            <video controls>
+                <source src="Tower Crane Assembly with Climber Demo - YouTube.webm" type="video/webm">
+            </video>
+            </fieldset>
+            </form>
+            
+            <!--------------------------------------------------------------
+            Some special symbols notations in HTML
+            because we use this symbols in HTML syntax it is very confusing when using them at a certain content so we use the following notations to use this special characters
+            
+            
+            
+            
+            -->
+            <ul>
+                
+                <li>Right single quote: &rsquo;</li>
+                <li>left single quote: &lsquo;</li>
+                <li>Right double quote: &rdquo;</li>
+                <li>left single quote: &ldquo;</li>
+                <li>Ampersands: &amp;</li>
+                <li>Greater than: &gt;</li>
+                <li>Less than: &lt;</li>
+                <li>Copyright: &copy;</li>
+                <li>Registered symbol: &reg;</li>
+                <li>Trade mark symbol: &trade;</li>          
+                
+                
+                
+                
+                
+            </ul>
+            
+            
+            <!--
+            --------------------------------------------------------------------------------------
+            SEMANIC STRUCTURAL ELEMNETS
+            --------------------------------------------------------------------------------------
+            we use the keywords "<header" and <"footer"> to structure our content in an organized way we use the header in the head section and we use the footer at the end of
+            our content
+            we use the keyword "<article>" to catagorize our content into subsections that have the same point
+            we also can us the header and footer keywords inside out articles for organization of our content
+            
+            
+            -->
+            
+             <!--
+            --------------------------------------------------------------------------------------
+            NAVIGATION
+            --------------------------------------------------------------------------------------
+            we use the "<nav" keyword to make a navigation page in our webpages
+            -->
+             
+              <!--
+            --------------------------------------------------------------------------------------
+            NON-SEMANIC ELEMNETS
+            --------------------------------------------------------------------------------------
+            This are Elements that can be appied anyware and helps us to easily manipulate our contents
+            The "<div>" keyword helps us to divide our contents into sections on any part of our content it allows for easier manipulation in the CSS
+            It has an attribute called class that helps us name the divided section so that we can differentiate them
+            
+            The "<span>" keyword is used like strong and em to put empahasis on a section of the content but unlike those keyowrds if we dont want to emphasise that section but
+            if we want to use that section for styling purposes we use the keyword span.
+            Like the div keyword we can name each span to diffrentiate one from another
+            
+            The "<section>" is used the same way but we mostly use it for larger texts like chapters.
+            The benift of using the section keyword is that is helps us adjust our headers automatically
+            
+            
+            -->
+             
+        
+        
+        
+        
+    </body>
+</html>
